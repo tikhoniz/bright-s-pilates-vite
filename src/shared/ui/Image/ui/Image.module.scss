@@ -1,0 +1,19 @@
+.Image {
+  position: relative;
+  width: 100%;
+
+  img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transform: filter 0.5s linear;
+    filter: blur(10px);
+    clip-path: inset(0);
+  }
+}
+
+.Image.loaded {
+  img {
+    filter: blur(0px);
+  }
+}

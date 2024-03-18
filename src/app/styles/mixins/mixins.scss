@@ -1,0 +1,59 @@
+@mixin no-scroll {
+  overflow: hidden;
+}
+
+@mixin absolute-centered {
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+@mixin absolute-centered-x {
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+@mixin invisibleScroll {
+  overflow: auto;
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+
+  &::-webkit-scrollbar {
+    width: 0;
+    height: 0;
+    background-color: transparent;
+  }
+  &::-webkit-scrollbar-thumb {
+    background-color: transparent;
+    border-radius: 100%;
+  }
+  &::-webkit-scrollbar-thumb:hover {
+    background-color: transparent;
+  }
+}
+
+@mixin container {
+  max-width: $max-viewport-width;
+  margin: 0 auto;
+  background-color: $dark-primary;
+
+  @media screen and (min-width: $sm-phone-width) {
+    padding: 0 16px;
+  }
+
+  @media screen and (min-width: $phone-width) {
+    padding: 0 18px;
+  }
+
+  @media screen and (min-width: $sm-tablet-width) {
+    padding: 0 26px;
+  }
+
+  @media screen and (min-width: $tablet-width) {
+    padding: 0 32px;
+  }
+
+  @media screen and (min-width: $desktop-width) {
+    padding: 0;
+  }
+}

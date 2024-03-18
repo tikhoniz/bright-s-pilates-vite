@@ -1,5 +1,11 @@
+import AppRouter from './providers/router/ui/AppRouter'
+
 const App = () => {
-  return <h1>Bright's Pilates Studio</h1>
+  return (
+    <div className="app">
+      <AppRouter />
+    </div>
+  )
 }
 
 export default App

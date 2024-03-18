@@ -4,17 +4,6 @@ declare module '*.scss' {
   export = classnames
 }
 
-// declare module '*.png'
-// declare module '*.jpg'
-// declare module '*.jpeg'
-// declare module '*.svg' {
-//   import { type ReactElement, type SVGProps } from 'react'
-//   const content: (props: SVGProps<SVGElement>) => ReactElement
-//   export default content
-// }
-
-// declare const __IS_DEV__: boolean
-
 type DeepPartial<T> = T extends object
   ? {
       [P in keyof T]?: DeepPartial<T[P]>
