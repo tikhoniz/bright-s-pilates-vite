@@ -1,0 +1,109 @@
+@import 'src/app/styles/variables/global.scss';
+@import 'src/app/styles/animations/global.scss';
+
+.Button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+
+  font-family: $font-family-main;
+  font-weight: 500;
+  letter-spacing: 0.1rem;
+  white-space: nowrap;
+
+  opacity: 0;
+  animation: fadeIn 0.3s forwards;
+
+  box-shadow: $shadow-s;
+  transition: all 0.3s ease;
+
+  span {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  &:active {
+    box-shadow: none;
+  }
+}
+
+.disabled {
+  cursor: not-allowed;
+}
+
+.uppercase {
+  text-transform: uppercase;
+}
+
+.clear {
+  padding: 0;
+}
+
+.background_color {
+  background: $primary;
+  color: $white;
+}
+
+.outline_gray {
+  background-color: #ffffff0f;
+
+  &::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    border-radius: 6px;
+    border: 1px solid transparent;
+    background: linear-gradient(to top, #ffffff33, #ffffff00) border-box;
+    -webkit-mask: linear-gradient(#fff 0 0) padding-box,
+      linear-gradient(#fff 0 0);
+    mask: linear-gradient(#fff 0 0) padding-box, linear-gradient(#fff 0 0);
+    mask-composite: exclude;
+  }
+}
+
+.size_s {
+  padding: 0.5rem 1.7rem;
+  font-size: $font-size-s;
+}
+
+.size_m {
+  padding: 0.5rem 2rem;
+  font-size: $font-size-m;
+}
+
+.size_l {
+  padding: 0.7rem 2.3rem;
+  font-size: $font-size-l;
+}
+
+.size_xl {
+  padding: 1rem 4rem;
+  font-size: $font-size-xl;
+}
+
+.round {
+  border-radius: 9999px;
+}
+
+.rectangle {
+  border-radius: 6px;
+}
+
+.loader {
+  width: 26px;
+  height: 26px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+}
+
+// стили будут работать только при наведении мышкой
+@media (hover: hover) {
+  .background_color:hover {
+    background: $dark-primary;
+  }
+}

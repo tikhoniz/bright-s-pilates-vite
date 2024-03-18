@@ -1,0 +1,26 @@
+@import 'src/app/styles/variables/global.scss';
+@import 'src/app/styles/mixins/mixins.scss';
+
+.NotFoundPage {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  @include container;
+
+  h2 {
+    margin-bottom: 1rem;
+    font-size: clamp(3rem, 6vw + 3rem, 10rem);
+    font-weight: 800;
+  }
+
+  p {
+    font-size: clamp(0.5rem, 1vw + 1rem, 10rem);
+    margin-bottom: 5rem;
+  }
+}
+
+.button {
+  width: 100%;
+  max-width: 20rem;
+}

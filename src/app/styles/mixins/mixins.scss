@@ -35,7 +35,6 @@
 @mixin container {
   max-width: $max-viewport-width;
   margin: 0 auto;
-  background-color: $dark-primary;
 
   @media screen and (min-width: $sm-phone-width) {
     padding: 0 16px;

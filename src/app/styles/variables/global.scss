@@ -1,3 +1,6 @@
+// Global
+$rem: 16px;
+
 //Font
 $font-family-main: 'Poppins', sans-serif;
 $font-family-secondary: 'PTRootUI';
@@ -6,12 +9,8 @@ $font-family-secondary: 'PTRootUI';
 $font-size-s: 0.75rem;
 $font-line-s: 120%;
 
-// Default size
-$font-size-m: 1rem;
-$font-line-m: 110%;
-
 // Medium -size
-$font-size-m: 1.25rem;
+$font-size-m: 1rem;
 $font-line-m: 110%;
 
 // Large -size
@@ -33,7 +32,7 @@ $sm-phone-width: 320px;
 
 // Colors
 $primary: #01a5c0;
-$dark-primary: #008c7c;
+$dark-primary: #0197ae;
 $white: #ffffff;
 $black: #000000;
 $light-gray: #ffffff66;
@@ -43,3 +42,12 @@ $violet: #bf6dff;
 
 $red: #ff344c;
 $green: #00c7b1;
+
+$shadow-s: 0px 3px 1px -2px rgba(145, 158, 171, 0.2),
+  0px 2px 2px 0px rgba(145, 158, 171, 0.14),
+  0px 1px 5px 0px rgba(145, 158, 171, 0.12);
+
+$shadow-m: 0 10px 15px -3px rgb(0 0 0 / 0.1), 0 4px 6px -4px rgb(0 0 0 / 0.1),
+  0 0 #0000;
+
+$shadow-lg: 0 8px 16px 0 rgba(1, 165, 192, 0.24);
